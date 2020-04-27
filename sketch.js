@@ -5,7 +5,6 @@ var time=0;
 var PLAY=1;
 var gameState=PLAY;
 var END=0;
-var gameState=END;
 
 function preload() {
   ballimg = loadImage("ball.png");
