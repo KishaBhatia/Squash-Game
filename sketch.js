@@ -27,8 +27,8 @@ function setup() {
 
 function draw() {
   background(205,153,0);
-   background(200,150,150);
-    fill("yellow");
+  
+  fill("yellow");
   textSize(15);
   textFont("Comic Sans MS");
   text("Single Player Squash Game",100,30);
@@ -84,6 +84,7 @@ if(gameState===PLAY){
     paddle.velocityY=0;
     restart.visible=true;
     time=0;
+    count=0;
     textFont("Algerian");
     fill("green");
     text("Game Over",150,200);
