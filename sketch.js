@@ -69,7 +69,10 @@ if(gameState===PLAY){
     gameState=END;
   }
   
- 
+  if(mousePressedOver(restart)){
+    count=0;
+      reset();
+    }
   
   if(frameCount%10===0){
   time=time +Math.round(getFrameRate()/30);
