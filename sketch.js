@@ -27,6 +27,8 @@ function setup() {
 
 function draw() {
   background(255,71,241);
+  background(205,153,105);
+  
   
   fill("yellow");
   textSize(15);
@@ -70,7 +72,6 @@ if(gameState===PLAY){
   }
   
   if(mousePressedOver(restart)){
-    count=0;
       reset();
     }
   
@@ -91,7 +92,6 @@ if(gameState===PLAY){
     text("Game Over",150,200);
 
     if(mousePressedOver(restart)){
-      count=0;
       reset();
     }
   }
@@ -105,7 +105,8 @@ function reset(){
   ball.x=60;
   ball.y=200;
   ball.velocityX=9;  
-  
+  time=0;
+  count=0;
 }
 
 function explosion(){
