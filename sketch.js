@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background(205,153,0);
+  background(200,150,150);
   
   fill("yellow");
   textSize(15);
@@ -84,7 +84,6 @@ if(gameState===PLAY){
     paddle.velocityY=0;
     restart.visible=true;
     time=0;
-    count=0;
     textFont("Algerian");
     fill("green");
     text("Game Over",150,200);
@@ -103,7 +102,7 @@ function reset(){
   ball.x=60;
   ball.y=200;
   ball.velocityX=9;  
-  score=0;
+  count=0;
 }
 
 function explosion(){
