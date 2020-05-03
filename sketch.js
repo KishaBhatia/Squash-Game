@@ -26,7 +26,7 @@ function setup() {
 }
 
 function draw() {
-  background(255,192,203);
+  background(255,71,241);
   
   fill("yellow");
   textSize(15);
@@ -69,9 +69,7 @@ if(gameState===PLAY){
     gameState=END;
   }
   
-  if(mousePressedOver(restart)){
-      reset();
-    }
+ 
   
   if(frameCount%10===0){
   time=time +Math.round(getFrameRate()/30);
@@ -84,12 +82,13 @@ if(gameState===PLAY){
     paddle.velocityY=0;
     restart.visible=true;
     time=0;
-    count=0;
+    
     textFont("Algerian");
     fill("green");
     text("Game Over",150,200);
 
     if(mousePressedOver(restart)){
+      count=0;
       reset();
     }
   }
